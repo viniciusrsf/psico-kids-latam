@@ -5,43 +5,43 @@ import { ApproximatePriceNote, LocalizedPrice } from "@/components/localized-pri
 import { getCurrencyContext } from "@/lib/pricing.functions";
 import { USD_PRICES, usdFallbackContext } from "@/lib/pricing";
 
-import act001 from "@/assets/actividad-001.webp.asset.json";
-import act002 from "@/assets/actividad-002.webp.asset.json";
-import act003 from "@/assets/actividad-003.webp.asset.json";
-import act004 from "@/assets/actividad-004.webp.asset.json";
-import act005 from "@/assets/actividad-005.webp.asset.json";
-import act006 from "@/assets/actividad-006.webp.asset.json";
-import act007 from "@/assets/actividad-007.webp.asset.json";
-import act008 from "@/assets/actividad-008.webp.asset.json";
-import act009 from "@/assets/actividad-009.webp.asset.json";
-import act010 from "@/assets/actividad-010.webp.asset.json";
-import antesDespues from "@/assets/antes-despues.webp.asset.json";
+import act001 from "@/assets/actividad-001.webp";
+import act002 from "@/assets/actividad-002.webp";
+import act003 from "@/assets/actividad-003.webp";
+import act004 from "@/assets/actividad-004.webp";
+import act005 from "@/assets/actividad-005.webp";
+import act006 from "@/assets/actividad-006.webp";
+import act007 from "@/assets/actividad-007.webp";
+import act008 from "@/assets/actividad-008.webp";
+import act009 from "@/assets/actividad-009.webp";
+import act010 from "@/assets/actividad-010.webp";
+import antesDespues from "@/assets/antes-despues.webp";
 import testimonial1 from "@/assets/testimonial-1.webp";
 import testimonial2 from "@/assets/testimonial-2.webp";
 import testimonial3 from "@/assets/testimonial-3.webp";
 import testimonial4 from "@/assets/testimonial-4.webp";
-import bono1 from "@/assets/bonos_1.webp.asset.json";
-import bono2 from "@/assets/bonos_2.webp.asset.json";
-import bono3 from "@/assets/bonos_3.webp.asset.json";
-import planoBasico from "@/assets/plano_basico.webp.asset.json";
-import planoPremium from "@/assets/plano_premium.webp.asset.json";
+import bono1 from "@/assets/bonos_1.webp";
+import bono2 from "@/assets/bonos_2.webp";
+import bono3 from "@/assets/bonos_3.webp";
+import planoBasico from "@/assets/plano_basico.webp";
+import planoPremium from "@/assets/plano_premium.webp";
 import garantiaSello from "@/assets/garantia-30.webp";
 import autoraFoto from "@/assets/autora.webp";
 import mockupHero640 from "@/assets/mockup-hero-640.webp";
 import mockupHero960 from "@/assets/mockup-hero-960.webp";
-const bonoImages = [bono1.url, bono2.url, bono3.url];
+const bonoImages = [bono1, bono2, bono3];
 
 const activityImages = [
-  { src: act001.url, title: "Salto Estrella" },
-  { src: act002.url, title: "Saltos de Colores" },
-  { src: act003.url, title: "Carrera en Zigzag" },
-  { src: act004.url, title: "Camino de Animales" },
-  { src: act005.url, title: "Carrera de la Rana" },
-  { src: act006.url, title: "Túnel Aventurero" },
-  { src: act007.url, title: "Islas en Movimiento" },
-  { src: act008.url, title: "Montaña y Valle" },
-  { src: act009.url, title: "Carrera de Cangrejos" },
-  { src: act010.url, title: "Caminata del Gigante" },
+  { src: act001, title: "Salto Estrella" },
+  { src: act002, title: "Saltos de Colores" },
+  { src: act003, title: "Carrera en Zigzag" },
+  { src: act004, title: "Camino de Animales" },
+  { src: act005, title: "Carrera de la Rana" },
+  { src: act006, title: "Túnel Aventurero" },
+  { src: act007, title: "Islas en Movimiento" },
+  { src: act008, title: "Montaña y Valle" },
+  { src: act009, title: "Carrera de Cangrejos" },
+  { src: act010, title: "Caminata del Gigante" },
 ];
 import {
   Check,
@@ -214,7 +214,7 @@ function SalesPage() {
             Mira la diferencia
           </h2>
           <img
-            src={antesDespues.url}
+            src={antesDespues}
             alt="Comparación: sin PsicoMotion Kids vs con PsicoMotion Kids"
             width={1280}
             height={854}
@@ -376,7 +376,7 @@ function SalesPage() {
                 <p className="text-xs text-slate-500 mt-1">PsicoMotion Kids</p>
               </div>
               <div className="mt-6">
-                <img src={planoBasico.url} alt="Plan Básico 50 actividades" width={860} height={860} loading="lazy" decoding="async" className="w-full max-w-[250px] mx-auto aspect-square object-contain" />
+                <img src={planoBasico} alt="Plan Básico 50 actividades" width={860} height={860} loading="lazy" decoding="async" className="w-full max-w-[250px] mx-auto aspect-square object-contain" />
               </div>
               <ul className="mt-6 space-y-2.5 text-sm text-slate-700">
                 {[
@@ -443,7 +443,7 @@ function SalesPage() {
                 <p className="text-xs text-slate-500 mt-1">Todo incluido + Bonos</p>
               </div>
               <div className="mt-6">
-                <img src={planoPremium.url} alt="Plan Completo +200 actividades + bonos" width={853} height={1280} loading="lazy" decoding="async" className="w-full aspect-square object-contain" />
+                <img src={planoPremium} alt="Plan Completo +200 actividades + bonos" width={853} height={1280} loading="lazy" decoding="async" className="w-full aspect-square object-contain" />
               </div>
 
               <ul className="mt-6 space-y-2.5 text-sm text-slate-700">
