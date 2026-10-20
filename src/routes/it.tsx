@@ -42,6 +42,7 @@ import {
   Layers,
   Sparkles,
   ArrowRight,
+  Target,
 } from "lucide-react";
 
 const bonoImages = [bono1, bono2, bono3];
