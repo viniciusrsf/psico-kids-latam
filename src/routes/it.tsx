@@ -60,6 +60,14 @@ const activityImages = [
 ];
 
 export const Route = createFileRoute("/it")({
+  loader: async () => ({
+    today: new Intl.DateTimeFormat("it-IT", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      timeZone: "Europe/Rome",
+    }).format(new Date()),
+  }),
   head: () => ({
     meta: [
       { title: "+200 Attività Psicomotorie Infantili Pronte da Proporre | PsicoMotion Kids" },
