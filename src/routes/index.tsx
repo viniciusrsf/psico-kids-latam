@@ -62,7 +62,13 @@ export const Route = createFileRoute("/")({
   }),
   loaderDeps: ({ search }) => ({ forceUsd: search.currency?.toUpperCase() === "USD" }),
   loader: async ({ deps }) => {
-    const currencyContext = deps.forceUsd ? usdFallbackContext() : await getCurrencyContext();
+    let currencyContext;
+    try {
+      currencyContext = deps.forceUsd ? usdFallbackContext() : await getCurrencyContext();
+    } catch (e) {
+      console.warn("Failed to get currency context, falling back to USD:", e);
+      currencyContext = usdFallbackContext();
+    }
     return {
       currencyContext,
       today: new Intl.DateTimeFormat("es-MX", {
