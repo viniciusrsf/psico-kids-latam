@@ -1,30 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import act001 from "@/assets/actividad-001.webp";
-import act002 from "@/assets/actividad-002.webp";
-import act003 from "@/assets/actividad-003.webp";
-import act004 from "@/assets/actividad-004.webp";
-import act005 from "@/assets/actividad-005.webp";
-import act006 from "@/assets/actividad-006.webp";
-import act007 from "@/assets/actividad-007.webp";
-import act008 from "@/assets/actividad-008.webp";
-import act009 from "@/assets/actividad-009.webp";
-import act010 from "@/assets/actividad-010.webp";
-import antesDespues from "@/assets/antes-despues.webp";
+import act001 from "@/assets/PsicoMotion-IT-01.webp";
+import act002 from "@/assets/PsicoMotion-IT-02.webp";
+import act003 from "@/assets/PsicoMotion-IT-03.webp";
+import act004 from "@/assets/PsicoMotion-IT-04.webp";
+import act005 from "@/assets/PsicoMotion-IT-05.webp";
+import act006 from "@/assets/PsicoMotion-IT-06.webp";
+import act007 from "@/assets/PsicoMotion-IT-07.webp";
+import act008 from "@/assets/PsicoMotion-IT-08.webp";
+import act009 from "@/assets/PsicoMotion-IT-09.webp";
+import act010 from "@/assets/PsicoMotion-IT-10.webp";
+import antesDespues from "@/assets/antes-depois-it.webp";
 import testimonial1 from "@/assets/testimonial-1.webp";
 import testimonial2 from "@/assets/testimonial-2.webp";
 import testimonial3 from "@/assets/testimonial-3.webp";
 import testimonial4 from "@/assets/testimonial-4.webp";
-import bono1 from "@/assets/bonos_1.webp";
-import bono2 from "@/assets/bonos_2.webp";
-import bono3 from "@/assets/bonos_3.webp";
-import planoBasico from "@/assets/plano_basico.webp";
-import planoPremium from "@/assets/plano_premium.webp";
-import garantiaSello from "@/assets/garantia-30.webp";
+import bono1 from "@/assets/bono-1-it.webp";
+import bono2 from "@/assets/bono-2-it.webp";
+import bono3 from "@/assets/bono-3-it.webp";
+import planoBasico from "@/assets/plano-base-it.webp";
+import planoPremium from "@/assets/plano-completo-it.webp";
+import garantiaSello from "@/assets/garantia-it.webp";
 import autoraFoto from "@/assets/autora.webp";
-import mockupHero640 from "@/assets/mockup-hero-640.webp";
-import mockupHero960 from "@/assets/mockup-hero-960.webp";
+import mockupHero from "@/assets/hero-it.webp";
 
 import {
   Check,
@@ -93,7 +92,7 @@ export const Route = createFileRoute("/it")({
       {
         rel: "preload",
         as: "image",
-        href: mockupHero640,
+        href: mockupHero,
         type: "image/webp",
         fetchPriority: "high",
       },
@@ -154,9 +153,7 @@ function ItalianSalesPage() {
           {/* Mockup */}
           <div className="mt-8 max-w-xl mx-auto">
             <img
-              src={mockupHero960}
-              srcSet={`${mockupHero640} 640w, ${mockupHero960} 960w`}
-              sizes="(max-width: 640px) calc(100vw - 32px), 576px"
+              src={mockupHero}
               alt="Raccolta PsicoMotion Kids con oltre 200 attività psicomotorie per bambini"
               width={960}
               height={984}
