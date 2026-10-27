@@ -199,11 +199,11 @@ function ItalianSalesPage() {
               WebkitMaskImage: "linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)",
             }}
           >
-            <div className="flex gap-5 w-max animate-[marquee_45s_linear_infinite]">
+            <div className="flex gap-4 sm:gap-5 w-max animate-[marquee_45s_linear_infinite]">
               {[...activityImages, ...activityImages].map((a, i) => (
                 <div
                   key={i}
-                  className="w-[260px] sm:w-[300px] shrink-0 rounded-2xl overflow-hidden shadow-md bg-white ring-1 ring-slate-200 flex flex-col"
+                  className="w-[220px] sm:w-[270px] shrink-0 rounded-2xl overflow-hidden shadow-md ring-1 ring-slate-200/80 bg-white"
                 >
                   <img
                     src={a.src}
@@ -214,9 +214,6 @@ function ItalianSalesPage() {
                     decoding="async"
                     className="w-full h-auto block"
                   />
-                  <div className="p-3 text-center bg-white border-t border-slate-100">
-                    <p className="text-xs font-bold text-slate-800">{a.title}</p>
-                  </div>
                 </div>
               ))}
             </div>
@@ -553,8 +550,8 @@ function ItalianSalesPage() {
 
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 37,00 € a</p>
-                <div className="block text-6xl sm:text-7xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
-                  12 <span className="text-3xl sm:text-4xl align-top">€</span>
+                <div className="block text-7xl sm:text-8xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
+                  12 <span className="text-4xl sm:text-5xl align-top">€</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 25,00 €</p>
 
@@ -599,7 +596,7 @@ function ItalianSalesPage() {
                   height={1280}
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-[290px] sm:max-w-[340px] mx-auto aspect-square object-contain drop-shadow-md"
+                  className="w-full max-w-[340px] sm:max-w-[400px] mx-auto aspect-square object-contain drop-shadow-lg"
                 />
               </div>
 
@@ -635,8 +632,8 @@ function ItalianSalesPage() {
 
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 67,00 € a</p>
-                <div className="block text-6xl sm:text-7xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
-                  19 <span className="text-3xl sm:text-4xl align-top">€</span>
+                <div className="block text-7xl sm:text-8xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
+                  19 <span className="text-4xl sm:text-5xl align-top">€</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 48,00 €</p>
 
