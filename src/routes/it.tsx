@@ -894,7 +894,7 @@ function ItalianSalesPage() {
               <a
                 href={CHECKOUT_BASIC}
                 id="cta-upsell-base-it"
-                className="gtm-link-click mt-2 inline-flex items-center justify-center w-full rounded-md bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition text-slate-700 font-bold uppercase tracking-wide py-2 text-[10px] touch-manipulation"
+                className="gtm-link-click mt-2 inline-flex items-center justify-center w-full rounded-md bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition text-slate-700 font-bold uppercase tracking-wide py-2 text-[9px] touch-manipulation"
               >
                 No grazie, preferisco continuare con il Base a 12 €
               </a>
