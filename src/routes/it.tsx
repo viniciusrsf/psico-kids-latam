@@ -395,25 +395,25 @@ function ItalianSalesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
-                n: "Maria H.",
+                n: "Martina Moretti",
                 role: "Insegnante scuola dell'infanzia",
                 t: "Finalmente una raccolta davvero pratica e pronta da stampare. Ho risparmiato ore di programmazione didattica per la mia sezione.",
                 img: testimonial1,
               },
               {
-                n: "Valentina R.",
+                n: "Federica Lombardi",
                 role: "Educatrice",
                 t: "I bambini partecipano con grande entusiasmo e ho riscontrato miglioramenti evidenti nella coordinazione e nell'equilibrio.",
                 img: testimonial2,
               },
               {
-                n: "Sofia G.",
+                n: "Elena Marchetti",
                 role: "Terapista dell'età evolutiva",
                 t: "Lo utilizzo sia nei laboratori a scuola sia nelle sedute individuali. Schede sintetiche, chiare e ricche di varianti.",
                 img: testimonial3,
               },
               {
-                n: "Camilla R.",
+                n: "Sara Ricci",
                 role: "Insegnante di sostegno",
                 t: "Anche gli alunni con maggiore agitazione motoria e difficoltà attentive sono riusciti a seguire le attività con continuità.",
                 img: testimonial4,
