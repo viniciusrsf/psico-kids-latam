@@ -514,14 +514,14 @@ function ItalianSalesPage() {
             Accesso a vita senza abbonamento · Garanzia di rimborso 30 giorni
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 items-stretch pt-4 sm:pt-6">
             {/* OPZIONE 1: Pacchetto Base */}
             <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 flex flex-col shadow-sm">
               <div className="text-center">
                 <h3 className="text-xl font-black uppercase text-slate-900">Pacchetto Base</h3>
                 <p className="text-xs text-slate-500 mt-1">Per iniziare con una selezione essenziale</p>
               </div>
-              <div className="mt-6">
+              <div className="mt-5">
                 <img
                   src={planoBasico}
                   alt="Pacchetto Base 50 attività psicomotorie"
@@ -529,7 +529,7 @@ function ItalianSalesPage() {
                   height={860}
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-[240px] mx-auto aspect-square object-contain"
+                  className="w-full max-w-[160px] sm:max-w-[190px] mx-auto aspect-square object-contain"
                 />
               </div>
 
@@ -551,17 +551,17 @@ function ItalianSalesPage() {
                 </li>
               </ul>
 
-              <div className="mt-auto pt-6 text-center border-t border-slate-100 mt-6">
+              <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 37,00 € a</p>
-                <div className="block text-5xl font-black text-[#1fa84a] leading-none my-1">
-                  15 <span className="text-2xl align-top">€</span>
+                <div className="block text-6xl sm:text-7xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
+                  12 <span className="text-3xl sm:text-4xl align-top">€</span>
                 </div>
-                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 22,00 €</p>
+                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 25,00 €</p>
 
                 <a
                   href={CHECKOUT_BASIC}
                   id="cta-pacchetto-base-it"
-                  className="gtm-link-click mt-5 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-4 text-sm touch-manipulation"
+                  className="gtm-link-click mt-5 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-4 text-sm touch-manipulation shadow-md"
                   onClick={(e) => {
                     e.preventDefault();
                     setShowUpsell(true);
@@ -581,17 +581,17 @@ function ItalianSalesPage() {
             </div>
 
             {/* OPZIONE 2: Pacchetto Completo */}
-            <div className="relative rounded-3xl border-2 border-[#f5b301] bg-white p-6 sm:p-8 flex flex-col shadow-xl">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="inline-block bg-[#1fa84a] text-white text-[10px] font-black uppercase px-3.5 py-1 rounded-full shadow-sm">
+            <div className="relative rounded-3xl border-2 border-[#f5b301] bg-white p-6 sm:p-8 flex flex-col shadow-xl mt-4 lg:mt-0">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 w-[92%] max-w-sm text-center z-10 pointer-events-none">
+                <span className="inline-block bg-[#1fa84a] text-white text-[10.5px] sm:text-xs font-black uppercase px-3.5 py-1.5 rounded-full shadow-md leading-tight tracking-wide border border-white/20">
                   ✓ Scelto dal 92% di insegnanti ed educatori
                 </span>
               </div>
-              <div className="text-center mt-2">
+              <div className="text-center mt-3 sm:mt-2">
                 <h3 className="text-xl font-black uppercase text-slate-900">Pacchetto Completo</h3>
                 <p className="text-xs text-slate-500 mt-1">La raccolta operativa definitiva per tutto l'anno scolastico</p>
               </div>
-              <div className="mt-6">
+              <div className="mt-5">
                 <img
                   src={planoPremium}
                   alt="Pacchetto Completo oltre 200 attività psicomotorie con bonus"
@@ -599,7 +599,7 @@ function ItalianSalesPage() {
                   height={1280}
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-[240px] mx-auto aspect-square object-contain"
+                  className="w-full max-w-[290px] sm:max-w-[340px] mx-auto aspect-square object-contain drop-shadow-md"
                 />
               </div>
 
@@ -633,17 +633,17 @@ function ItalianSalesPage() {
                 </li>
               </ul>
 
-              <div className="mt-auto pt-6 text-center border-t border-slate-100 mt-6">
+              <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 67,00 € a</p>
-                <div className="block text-5xl font-black text-[#1fa84a] leading-none my-1">
-                  24 <span className="text-2xl align-top">€</span>
+                <div className="block text-6xl sm:text-7xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
+                  19 <span className="text-3xl sm:text-4xl align-top">€</span>
                 </div>
-                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 43,00 €</p>
+                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 48,00 €</p>
 
                 <a
                   href={CHECKOUT_COMPLETO}
                   id="cta-pacchetto-completo-it"
-                  className="gtm-link-click mt-5 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-4 text-sm touch-manipulation"
+                  className="gtm-link-click mt-5 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-4 text-sm touch-manipulation shadow-md"
                 >
                   ACQUISTA IL PACCHETTO COMPLETO
                 </a>
@@ -857,15 +857,15 @@ function ItalianSalesPage() {
                 Pacchetto Completo con il 20% di sconto
               </h3>
               <div className="mt-2.5 rounded-xl bg-[#faf6ee] p-2.5">
-                <p className="text-[11px] text-slate-500 line-through">Da 24,00 € a soli</p>
+                <p className="text-[11px] text-slate-500 line-through">Da 19,00 € a soli</p>
                 <div className="block text-3xl font-black text-[#1fa84a] leading-none my-0.5">
-                  19,20 <span className="text-lg align-top">€</span>
+                  15,20 <span className="text-lg align-top">€</span>
                 </div>
-                <p className="text-[10px] text-slate-500">20% di sconto sul prezzo di 24,00 € · Accesso a vita</p>
+                <p className="text-[10px] text-slate-500">20% di sconto sul prezzo di 19,00 € · Accesso a vita</p>
               </div>
 
               <p className="mt-2 text-xs font-black text-[#f5b301] uppercase tracking-wide">
-                Per soli 4,20 € in più porti a casa il Pacchetto Completo
+                Per soli 3,20 € in più porti a casa il Pacchetto Completo
               </p>
 
               <ul className="mt-2 space-y-1 text-[11px] text-slate-700 text-left">
@@ -888,14 +888,14 @@ function ItalianSalesPage() {
                 id="cta-upsell-completo-it"
                 className="gtm-link-click mt-3 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-3.5 text-xs touch-manipulation"
               >
-                Sì, voglio il Pacchetto Completo a 19,20 €
+                Sì, voglio il Pacchetto Completo a 15,20 €
               </a>
               <a
                 href={CHECKOUT_BASIC}
                 id="cta-upsell-base-it"
                 className="gtm-link-click mt-2 inline-flex items-center justify-center w-full rounded-md bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition text-slate-700 font-bold uppercase tracking-wide py-2 text-[9px] touch-manipulation"
               >
-                No grazie, preferisco continuare con il Base a 15 €
+                No grazie, preferisco continuare con il Base a 12 €
               </a>
             </div>
           </div>
