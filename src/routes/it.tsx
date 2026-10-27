@@ -723,7 +723,7 @@ function ItalianSalesPage() {
             <div className="mx-auto md:mx-0 flex justify-center">
               <img
                 src={autoraFoto}
-                alt="Dott.ssa Lucía Mendoza, esperta in neurosviluppo infantile"
+                alt="Dott.ssa Anna Bianchi, esperta in neurosviluppo infantile"
                 width={700}
                 height={700}
                 loading="lazy"
@@ -733,13 +733,13 @@ function ItalianSalesPage() {
             </div>
             <div className="text-center md:text-left">
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                PsicoMotion Kids nasce dall'esperienza ventennale della Dott.ssa Lucía Mendoza nell'osservazione dello sviluppo infantile e della stimolazione motoria e sensoriale.
+                PsicoMotion Kids nasce dall'esperienza ventennale della Dott.ssa Anna Bianchi nell'osservazione dello sviluppo infantile e della stimolazione motoria e sensoriale.
               </p>
               <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                 Il progetto risponde a un'esigenza sentita da docenti ed educatori: disporre di schede pratiche, chiare e prive di formalismi inutili, capaci di sostenere la coordinazione, l'autonomia e la fiducia corporea di ogni bambino attraverso il gioco guidato.
               </p>
               <div className="mt-6 pt-6 border-t border-slate-200">
-                <p className="text-lg sm:text-xl font-black text-slate-900">Dott.ssa Lucía Mendoza</p>
+                <p className="text-lg sm:text-xl font-black text-slate-900">Dott.ssa Anna Bianchi</p>
                 <p className="text-xs sm:text-sm font-semibold text-[#6d28d9] mt-1">
                   Specialista in Neurosviluppo Infantile e Fondatrice di PsicoMotion Kids
                 </p>
