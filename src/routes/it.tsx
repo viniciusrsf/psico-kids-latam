@@ -588,7 +588,7 @@ function ItalianSalesPage() {
                 <h3 className="text-xl font-black uppercase text-slate-900">Pacchetto Completo</h3>
                 <p className="text-xs text-slate-500 mt-1">La raccolta operativa definitiva per tutto l'anno scolastico</p>
               </div>
-              <div className="mt-5">
+              <div className="mt-4 sm:mt-5 flex justify-center -mx-2 sm:-mx-4">
                 <img
                   src={planoPremium}
                   alt="Pacchetto Completo oltre 200 attività psicomotorie con bonus"
@@ -596,7 +596,7 @@ function ItalianSalesPage() {
                   height={1280}
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-[420px] sm:max-w-[480px] mx-auto aspect-square object-contain drop-shadow-2xl"
+                  className="w-full max-w-[460px] sm:max-w-[540px] mx-auto h-auto object-contain drop-shadow-2xl scale-105 sm:scale-110 transition-transform"
                 />
               </div>
 
