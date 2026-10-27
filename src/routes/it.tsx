@@ -554,9 +554,9 @@ function ItalianSalesPage() {
               <div className="mt-auto pt-6 text-center border-t border-slate-100 mt-6">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 37,00 € a</p>
                 <div className="block text-5xl font-black text-[#1fa84a] leading-none my-1">
-                  6,90 <span className="text-2xl align-top">€</span>
+                  12 <span className="text-2xl align-top">€</span>
                 </div>
-                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 30,10 €</p>
+                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 25,00 €</p>
 
                 <a
                   href={CHECKOUT_BASIC}
@@ -636,9 +636,9 @@ function ItalianSalesPage() {
               <div className="mt-auto pt-6 text-center border-t border-slate-100 mt-6">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 67,00 € a</p>
                 <div className="block text-5xl font-black text-[#1fa84a] leading-none my-1">
-                  12,90 <span className="text-2xl align-top">€</span>
+                  19 <span className="text-2xl align-top">€</span>
                 </div>
-                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 54,10 €</p>
+                <p className="text-xs text-[#1fa84a] font-semibold">Pagamento unico · Risparmi 48,00 €</p>
 
                 <a
                   href={CHECKOUT_COMPLETO}
@@ -858,15 +858,15 @@ function ItalianSalesPage() {
               </h3>
 
               <div className="mt-2.5 rounded-xl bg-[#faf6ee] p-2.5">
-                <p className="text-[11px] text-slate-500 line-through">Da 12,90 € a soli</p>
+                <p className="text-[11px] text-slate-500 line-through">Da 19,00 € a soli</p>
                 <div className="block text-3xl font-black text-[#1fa84a] leading-none my-0.5">
-                  9,90 <span className="text-lg align-top">€</span>
+                  15,50 <span className="text-lg align-top">€</span>
                 </div>
                 <p className="text-[10px] text-slate-500">Accesso a vita senza abbonamento</p>
               </div>
 
               <p className="mt-2 text-xs font-black text-[#f5b301] uppercase tracking-wide">
-                Per soli 3,00 € in più porti a casa il Pacchetto Completo
+                Per soli 3,50 € in più porti a casa il Pacchetto Completo
               </p>
 
               <ul className="mt-2 space-y-1 text-[11px] text-slate-700 text-left">
@@ -889,14 +889,14 @@ function ItalianSalesPage() {
                 id="cta-upsell-completo-it"
                 className="gtm-link-click mt-3 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-3.5 text-xs touch-manipulation"
               >
-                Sì, voglio il Pacchetto Completo a 9,90 €
+                Sì, voglio il Pacchetto Completo a 15,50 €
               </a>
               <a
                 href={CHECKOUT_BASIC}
                 id="cta-upsell-base-it"
                 className="gtm-link-click mt-2 inline-flex items-center justify-center w-full rounded-md bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition text-slate-700 font-bold uppercase tracking-wide py-2 text-[10px] touch-manipulation"
               >
-                No grazie, preferisco continuare con il Base a 6,90 €
+                No grazie, preferisco continuare con il Base a 12 €
               </a>
             </div>
           </div>
