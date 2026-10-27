@@ -102,9 +102,9 @@ export const Route = createFileRoute("/it")({
 });
 
 /* ---------------- Checkout Links ---------------- */
-const CHECKOUT_BASIC = "https://pay.hotmart.com/F106852226O?off=f01tmy2k&checkoutMode=10";
-const CHECKOUT_UPSELL = "https://pay.hotmart.com/F106852226O?off=rdf6dqps&checkoutMode=10";
-const CHECKOUT_COMPLETO = "https://pay.hotmart.com/F106852226O?off=qrp2nno7&checkoutMode=10";
+const CHECKOUT_BASIC = "https://pay.hotmart.com/S108152248Q?off=s17k1lp6";
+const CHECKOUT_UPSELL = "https://pay.hotmart.com/S108152248Q?off=myxmuntt";
+const CHECKOUT_COMPLETO = "https://pay.hotmart.com/S108152248Q?off=uv9t0mmj";
 
 const CtaButton = ({
   children,
@@ -851,22 +851,22 @@ function ItalianSalesPage() {
 
             <div className="text-center">
               <span className="inline-flex items-center gap-1 bg-[#e11d1d] text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full">
-                <Flame className="w-3 h-3" /> Offerta unica
+                <Flame className="w-3 h-3" /> Offerta unica · Sconto 20%
               </span>
               <h3 className="mt-2 text-base sm:text-lg font-black uppercase text-slate-900 leading-tight">
-                Pacchetto Completo con sconto speciale
+                Pacchetto Completo con il 20% di sconto
               </h3>
 
               <div className="mt-2.5 rounded-xl bg-[#faf6ee] p-2.5">
                 <p className="text-[11px] text-slate-500 line-through">Da 19,00 € a soli</p>
                 <div className="block text-3xl font-black text-[#1fa84a] leading-none my-0.5">
-                  15,50 <span className="text-lg align-top">€</span>
+                  15,20 <span className="text-lg align-top">€</span>
                 </div>
-                <p className="text-[10px] text-slate-500">Accesso a vita senza abbonamento</p>
+                <p className="text-[10px] text-slate-500">20% di sconto sul prezzo di 19,00 € · Accesso a vita</p>
               </div>
 
               <p className="mt-2 text-xs font-black text-[#f5b301] uppercase tracking-wide">
-                Per soli 3,50 € in più porti a casa il Pacchetto Completo
+                Per soli 3,20 € in più porti a casa il Pacchetto Completo
               </p>
 
               <ul className="mt-2 space-y-1 text-[11px] text-slate-700 text-left">
@@ -889,7 +889,7 @@ function ItalianSalesPage() {
                 id="cta-upsell-completo-it"
                 className="gtm-link-click mt-3 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-3.5 text-xs touch-manipulation"
               >
-                Sì, voglio il Pacchetto Completo a 15,50 €
+                Sì, voglio il Pacchetto Completo a 15,20 €
               </a>
               <a
                 href={CHECKOUT_BASIC}
