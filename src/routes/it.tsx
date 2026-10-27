@@ -102,9 +102,9 @@ export const Route = createFileRoute("/it")({
 });
 
 /* ---------------- Checkout Links ---------------- */
-const CHECKOUT_BASIC = "https://pay.hotmart.com/S108152248Q?off=s17k1lp6";
-const CHECKOUT_UPSELL = "https://pay.hotmart.com/S108152248Q?off=myxmuntt";
-const CHECKOUT_COMPLETO = "https://pay.hotmart.com/S108152248Q?off=uv9t0mmj";
+const CHECKOUT_BASIC = "https://pay.hotmart.com/S108152248Q?off=s17k1lp6&checkoutMode=10";
+const CHECKOUT_UPSELL = "https://pay.hotmart.com/S108152248Q?off=myxmuntt&checkoutMode=10";
+const CHECKOUT_COMPLETO = "https://pay.hotmart.com/S108152248Q?off=uv9t0mmj&checkoutMode=10";
 
 const CtaButton = ({
   children,
@@ -551,9 +551,9 @@ function ItalianSalesPage() {
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 37,00 € a</p>
                 <div className="block text-8xl sm:text-9xl font-black text-[#1fa84a] leading-none my-2 tracking-tighter">
-                  12 <span className="text-5xl sm:text-6xl align-top">€</span>
+                  15 <span className="text-5xl sm:text-6xl align-top">€</span>
                 </div>
-                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 25,00 €</p>
+                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 22,00 €</p>
 
                 <a
                   href={CHECKOUT_BASIC}
@@ -633,9 +633,9 @@ function ItalianSalesPage() {
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 67,00 € a</p>
                 <div className="block text-8xl sm:text-9xl font-black text-[#1fa84a] leading-none my-2 tracking-tighter">
-                  19 <span className="text-5xl sm:text-6xl align-top">€</span>
+                  24 <span className="text-5xl sm:text-6xl align-top">€</span>
                 </div>
-                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 48,00 €</p>
+                <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 43,00 €</p>
 
                 <a
                   href={CHECKOUT_COMPLETO}
@@ -854,15 +854,15 @@ function ItalianSalesPage() {
                 Pacchetto Completo con il 20% di sconto
               </h3>
               <div className="mt-2.5 rounded-xl bg-[#faf6ee] p-2.5">
-                <p className="text-[11px] text-slate-500 line-through">Da 19,00 € a soli</p>
+                <p className="text-[11px] text-slate-500 line-through">Da 24,00 € a soli</p>
                 <div className="block text-3xl font-black text-[#1fa84a] leading-none my-0.5">
-                  15,20 <span className="text-lg align-top">€</span>
+                  19,20 <span className="text-lg align-top">€</span>
                 </div>
-                <p className="text-[10px] text-slate-500">20% di sconto sul prezzo di 19,00 € · Accesso a vita</p>
+                <p className="text-[10px] text-slate-500">20% di sconto sul prezzo di 24,00 € · Accesso a vita</p>
               </div>
 
               <p className="mt-2 text-xs font-black text-[#f5b301] uppercase tracking-wide">
-                Per soli 3,20 € in più porti a casa il Pacchetto Completo
+                Per soli 4,20 € in più porti a casa il Pacchetto Completo
               </p>
 
               <ul className="mt-2 space-y-1 text-[11px] text-slate-700 text-left">
@@ -885,14 +885,14 @@ function ItalianSalesPage() {
                 id="cta-upsell-completo-it"
                 className="gtm-link-click mt-3 block w-full rounded-md bg-[#1fa84a] hover:bg-[#178a3d] active:scale-[0.98] transition text-white font-black uppercase tracking-wide py-3.5 text-xs touch-manipulation"
               >
-                Sì, voglio il Pacchetto Completo a 15,20 €
+                Sì, voglio il Pacchetto Completo a 19,20 €
               </a>
               <a
                 href={CHECKOUT_BASIC}
                 id="cta-upsell-base-it"
                 className="gtm-link-click mt-2 inline-flex items-center justify-center w-full rounded-md bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition text-slate-700 font-bold uppercase tracking-wide py-2 text-[9px] touch-manipulation"
               >
-                No grazie, preferisco continuare con il Base a 12 €
+                No grazie, preferisco continuare con il Base a 15 €
               </a>
             </div>
           </div>
