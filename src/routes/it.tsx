@@ -550,8 +550,8 @@ function ItalianSalesPage() {
 
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 37,00 € a</p>
-                <div className="block text-7xl sm:text-8xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
-                  12 <span className="text-4xl sm:text-5xl align-top">€</span>
+                <div className="block text-8xl sm:text-9xl font-black text-[#1fa84a] leading-none my-2 tracking-tighter">
+                  12 <span className="text-5xl sm:text-6xl align-top">€</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 25,00 €</p>
 
@@ -596,7 +596,7 @@ function ItalianSalesPage() {
                   height={1280}
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-[340px] sm:max-w-[400px] mx-auto aspect-square object-contain drop-shadow-lg"
+                  className="w-full max-w-[420px] sm:max-w-[480px] mx-auto aspect-square object-contain drop-shadow-2xl"
                 />
               </div>
 
@@ -632,8 +632,8 @@ function ItalianSalesPage() {
 
               <div className="mt-auto pt-6 text-center border-t border-slate-100">
                 <p className="text-sm line-through text-[#e11d1d] font-bold">Da 67,00 € a</p>
-                <div className="block text-7xl sm:text-8xl font-black text-[#1fa84a] leading-none my-2 tracking-tight">
-                  19 <span className="text-4xl sm:text-5xl align-top">€</span>
+                <div className="block text-8xl sm:text-9xl font-black text-[#1fa84a] leading-none my-2 tracking-tighter">
+                  19 <span className="text-5xl sm:text-6xl align-top">€</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#1fa84a] font-bold">Pagamento unico · Risparmi 48,00 €</p>
 
@@ -660,11 +660,11 @@ function ItalianSalesPage() {
             <img
               src={garantiaSello}
               alt="Garanzia di 30 giorni"
-              width={180}
-              height={180}
+              width={320}
+              height={320}
               loading="lazy"
               decoding="async"
-              className="w-40 h-40 object-contain drop-shadow-xl rounded-2xl"
+              className="w-56 h-56 sm:w-72 sm:h-72 object-contain drop-shadow-2xl rounded-2xl"
             />
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
