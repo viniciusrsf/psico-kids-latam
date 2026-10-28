@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ItRouteImport } from './routes/it'
 import { Route as ItV2RouteImport } from './routes/it-v2'
+import { Route as FrRouteImport } from './routes/fr'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ItRoute = ItRouteImport.update({
@@ -25,6 +26,12 @@ const ItV2Route = ItV2RouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 
+const FrRoute = FrRouteImport.update({
+  id: '/fr',
+  path: '/fr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -35,30 +42,34 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/it': typeof ItRoute
   '/it-v2': typeof ItV2Route
+  '/fr': typeof FrRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/it': typeof ItRoute
   '/it-v2': typeof ItV2Route
+  '/fr': typeof FrRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/it': typeof ItRoute
   '/it-v2': typeof ItV2Route
+  '/fr': typeof FrRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/it' | '/it-v2'
+  fullPaths: '/' | '/it' | '/it-v2' | '/fr'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/it' | '/it-v2'
-  id: '__root__' | '/' | '/it' | '/it-v2'
+  to: '/' | '/it' | '/it-v2' | '/fr'
+  id: '__root__' | '/' | '/it' | '/it-v2' | '/fr'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ItRoute: typeof ItRoute
   ItV2Route: typeof ItV2Route
+  FrRoute: typeof FrRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -84,6 +95,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ItV2RouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fr': {
+      id: '/fr'
+      path: '/fr'
+      fullPath: '/fr'
+      preLoaderRoute: typeof FrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -91,6 +109,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ItRoute: ItRoute,
   ItV2Route: ItV2Route,
+  FrRoute: FrRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
