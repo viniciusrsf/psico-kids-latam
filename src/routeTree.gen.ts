@@ -10,11 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ItRouteImport } from './routes/it'
+import { Route as ItV2RouteImport } from './routes/it-v2'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ItRoute = ItRouteImport.update({
   id: '/it',
   path: '/it',
+  getParentRoute: () => rootRouteImport,
+} as any)
+
+const ItV2Route = ItV2RouteImport.update({
+  id: '/it-v2',
+  path: '/it-v2',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -27,27 +34,31 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/it': typeof ItRoute
+  '/it-v2': typeof ItV2Route
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/it': typeof ItRoute
+  '/it-v2': typeof ItV2Route
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/it': typeof ItRoute
+  '/it-v2': typeof ItV2Route
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/it'
+  fullPaths: '/' | '/it' | '/it-v2'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/it'
-  id: '__root__' | '/' | '/it'
+  to: '/' | '/it' | '/it-v2'
+  id: '__root__' | '/' | '/it' | '/it-v2'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ItRoute: typeof ItRoute
+  ItV2Route: typeof ItV2Route
 }
 
 declare module '@tanstack/react-router' {
@@ -66,12 +77,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ItRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/it-v2': {
+      id: '/it-v2'
+      path: '/it-v2'
+      fullPath: '/it-v2'
+      preLoaderRoute: typeof ItV2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ItRoute: ItRoute,
+  ItV2Route: ItV2Route,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
