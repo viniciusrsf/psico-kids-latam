@@ -1,27 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import act001 from "@/assets/PsicoMotion-IT-01.webp";
-import act002 from "@/assets/PsicoMotion-IT-02.webp";
-import act003 from "@/assets/PsicoMotion-IT-03.webp";
-import act004 from "@/assets/PsicoMotion-IT-04.webp";
-import act005 from "@/assets/PsicoMotion-IT-05.webp";
-import act006 from "@/assets/PsicoMotion-IT-06.webp";
-import act007 from "@/assets/PsicoMotion-IT-07.webp";
-import act008 from "@/assets/PsicoMotion-IT-08.webp";
-import act009 from "@/assets/PsicoMotion-IT-09.webp";
-import act010 from "@/assets/PsicoMotion-IT-10.webp";
-import antesDespues from "@/assets/antes-depois-it.webp";
+import act001 from "@/assets/PsicoMotion_FR_001.webp";
+import act002 from "@/assets/PsicoMotion_FR_002.webp";
+import act003 from "@/assets/PsicoMotion_FR_003_Course_en_zigzag.webp";
+import act004 from "@/assets/PsicoMotion_FR_004_Le_parcours_des_animaux.webp";
+import act005 from "@/assets/PsicoMotion_FR_005_La_course_de_la_grenouille.webp";
+import act006 from "@/assets/PsicoMotion_FR_006_Le_Tunnel_de_l_Aventure.webp";
+import act007 from "@/assets/PsicoMotion_FR_007_Les_iles_en_mouvement.webp";
+import act008 from "@/assets/PsicoMotion_FR_008_Montagne_et_Vallee.webp";
+import act009 from "@/assets/PsicoMotion_FR_009_La_Course_du_Crabe.webp";
+import act010 from "@/assets/PsicoMotion_FR_010_La_Marche_du_Geant.webp";
+import antesDespues from "@/assets/psicomotion_kids_comparativo_fr.webp";
 import testimonial1 from "@/assets/testimonial-1.webp";
 import testimonial2 from "@/assets/testimonial-2.webp";
 import testimonial3 from "@/assets/testimonial-3.webp";
 import testimonial4 from "@/assets/testimonial-4.webp";
-import bono1 from "@/assets/bono-1-it.webp";
-import bono2 from "@/assets/bono-2-it.webp";
-import bono3 from "@/assets/bono-3-it.webp";
-import planoPremium from "@/assets/plano-completo-it.webp";
-import garantiaSello from "@/assets/garantia-it.webp";
+import bono1 from "@/assets/bonus_1_programmation_annuelle_fr.webp";
+import bono2 from "@/assets/bonus_2_guide_etapes_developpement_psychomoteur_fr.webp";
+import bono3 from "@/assets/bonus_3_fiche_observation_habiletes_motrices_fr.webp";
+import planoPremium from "@/assets/psicomotion_kids_pack_premium_fr.webp";
+import garantiaSello from "@/assets/selo_garantia_30_dias_frances.webp";
 import autoraFoto from "@/assets/autora.webp";
-import mockupHero from "@/assets/hero-it.webp";
+import mockupHero from "@/assets/hero_psicomotion_kids_fr_webp.webp";
 
 import {
   Check,
