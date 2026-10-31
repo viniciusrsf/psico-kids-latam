@@ -18,10 +18,10 @@ import testimonial4 from "@/assets/testimonial-4.webp";
 import bono1 from "@/assets/bonus_1_programmation_annuelle_fr.webp";
 import bono2 from "@/assets/bonus_2_guide_etapes_developpement_psychomoteur_fr.webp";
 import bono3 from "@/assets/bonus_3_fiche_observation_habiletes_motrices_fr.webp";
-import planoPremium from "@/assets/psicomotion_kids_pack_premium_fr.webp";
+import planoPremium from "@/assets/psicomotion_kids_pack_premium_fr novo.webp";
 import garantiaSello from "@/assets/selo_garantia_30_dias_frances.webp";
 import autoraFoto from "@/assets/autora.webp";
-import mockupHero from "@/assets/hero_psicomotion_kids_fr_webp.webp";
+import mockupHero from "@/assets/hero_psicomotion_kids_fr novo.webp";
 
 import {
   Check,
