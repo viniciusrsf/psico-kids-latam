@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
-        children: `<!-- Google Tag Manager -->\n(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://api.psicomotionkids.shop/amabelmauv.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','4=HxFcKjgoTy9ON1NUWzZVRwBIU0NdQwYPSwUSBA8KDw4CHA4DBwwGElgGCQIc');\n<!-- End Google Tag Manager -->`,
+        children: `(function(s,e,n,t,i){s[n]=s[n]||function(){(s[n].q=s[n].q||[]).push(arguments)};var js=e.createElement('script');js.async=1;js.src=t+'?tid='+i;e.head.appendChild(js)})(window,document,'trk','https://track.psicomotionkids.online/api/t/tracker.js','da82bbaa-61d4-4a21-a4b4-dbbb5241c95e');`,
       },
     ],
   }),
