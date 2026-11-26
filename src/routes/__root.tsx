@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
-        children: `(function(s,e,n,t,i){s[n]=s[n]||function(){(s[n].q=s[n].q||[]).push(arguments)};var js=e.createElement('script');js.async=1;js.src=t+'?tid='+i;e.head.appendChild(js)})(window,document,'trk','https://track.psicomotionkids.online/api/t/tracker.js','da82bbaa-61d4-4a21-a4b4-dbbb5241c95e');`,
+        children: `(function(s,e,n,t,i){s[n]=s[n]||function(){(s[n].q=s[n].q||[]).push(arguments)};var js=e.createElement('script');js.async=1;js.src=t+'?tid='+i;e.head.appendChild(js)})(window,document,'trk','https://track.psicomotionkids.site/api/t/tracker.js','da82bbaa-61d4-4a21-a4b4-dbbb5241c95e');`,
       },
     ],
   }),
